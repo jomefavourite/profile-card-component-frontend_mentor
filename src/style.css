@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+
+body {
+  font-size: 18px;
+  background: url("./images/bg-pattern-top.svg") -750px -500px,
+    url("./images/bg-pattern-bottom.svg") 200px 300px;
+  background-repeat: no-repeat;
+}
+
+@screen md {
+  body {
+    background: url("./images/bg-pattern-top.svg") -350px -500px,
+      url("./images/bg-pattern-bottom.svg") 300px 500px;
+    background-repeat: no-repeat;
+  }
+}
+
+@screen lg {
+  body {
+    background: url("./images/bg-pattern-top.svg") -350px -500px,
+      url("./images/bg-pattern-bottom.svg") 140% 500px;
+    background-repeat: no-repeat;
+  }
+}
+
+/* 140% */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.top {
+  top: 15%;
+  transform: translateY(-80%);
+}
+
+@tailwind utilities;
